@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti - San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PANTALLA DE INICIO -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="heart-container">
+            <svg class="heart" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,95 C25,75 5,60 5,45 C5,30 15,20 25,20 C35,20 45,30 50,40 C55,30 65,20 75,20 C85,20 95,30 95,45 C95,60 75,75 50,95 Z"/>
+            </svg>
+        </div>
+        <div class="splash-text">
+            <h1>Felis San Valentín</h1>
+            <p><br>Dale al boton</p>
+        </div>
+        <button class="open-button" onclick="openContent()">¡Aquí!</button>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        <header>
+            <h1>Te Amo Mi Niña</h1>
+            <p>Una página sobre nosotros</p>
+        </header>
+
+        <div class="container">
+            <!-- GALERÍA -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="placeholder-image"><img src="/IMG/DSC00498.jpg" alt=""></div>
+                    <div class="gallery-content">
+                        <h3>Una foto increible</h3>
+                        <p>Esta foto me flipa porque es una de nuestras primeras fotos juntitos en condiciones, ademas de que fue con tu camara y eso me gusta, como tu, jiji.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="placeholder-image"><img src="IMG/toDownload.jpg" alt=""></div>
+                    <div class="gallery-content">
+                        <h3>Felis navidas</h3>
+                        <p>Esta fue mas adelante y encima la editaste tu. Fue nuestra segunda navidad juntos pero joder que guay son todas las navidades a tu lado.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="placeholder-image"><img src="IMG/IMG-20250915-WA0005.jpg" alt=""></div>
+                    <div class="gallery-content">
+                        <h3>Esta es nuevecilla</h3>
+                        <p>Esta foto aunque sea nueva, no se,  me encanta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE MENSAJES -->
+            <div class="messages-section">
+                <h2>Mensajitos chulisimos</h2>
+                
+                <div class="message-item">
+                    <p>Cielo eres mi todo, sin ti me habria metido fentanilo o algo asi, gracias por ser una tia tan super chulisima.</p>
+                </div>
+
+                <div class="message-item">
+                    <p>Cuando estoy contigo, como diria el rey viejo, <strong>"Me llena(s) de orgullo y satisfaccion"</strong> HAHAHAHA, ahora enserio que orgulloso estoy de ti guapa</p>
+                </div>
+
+                <div class="message-item">
+                    <p>Eres el amor de mi vida, te amo con locura.</p>
+                </div>
+            </div>
+
+            <!-- SECCIÓN ESPECIAL -->
+            <div class="special-section">
+                <h2>Por ti</h2>
+                <p>Aunque hoy sea San Valentín y sea un dia especial, todos los dias son especiales. Por eso siempre intento de hacerte reir, que te piques conmigo cuando te molesto y decirte te amo, porque amo hacerte sentir que existo y que estoy a tu lado, asi que, por ti gracias. </p>
+                <div class="floating-hearts">
+                    <div class="floating-heart">❤️</div>
+                    <div class="floating-heart">💕</div>
+                    <div class="floating-heart">💖</div>
+                    <div class="floating-heart">💗</div>
+                    <div class="floating-heart">💝</div>
+                </div>
+            </div>
+
+            <!-- GALERÍA DE FOTOS -->
+            <div class="photos-section">
+                <h2>Fotitos Aleatorias</h2>
+                <div class="photos-grid">
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG_20220416_001603_965.webp" alt=""></div>
+                        <div class="photo-label">La primera vez que <br> dormimos juntos.</div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG20230304171925.jpg" alt=""></div>
+                        <div class="photo-label">Mi persona especial <br> en un lugar especial.</div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG-20210625-WA0005.jpg" alt=""></div>
+                        <div class="photo-label">Nuestra primera cita <br>y nuestro primer burgui.</div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG-20220624-WA0002.jpg" alt=""></div>
+                        <div class="photo-label">Nuestro primer San Juan</div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG20230511170514.jpg" alt=""></div>
+                        <div class="photo-label">Un dia cualquiera en la biblio</div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder"><img src="IMG/IMG-20231111-WA0012.jpeg" alt=""></div>
+                        <div class="photo-label">Una de nuestras autistadas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Feliz 5º San Valentín amor</p>
+            <p style="font-size: 1em; color: rgba(255, 255, 255, 0.8);">Te amo con locura</p>
+            <div class="hearts">❤️ 💕 ❤️ 💕 ❤️</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
