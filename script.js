@@ -39,6 +39,12 @@ function openImageModal(imageSrc) {
     modalImage.src = imageSrc;
     modal.classList.add('active');
     
+    // Remover blur de la imagen que se está mostrando
+    const originalImg = document.querySelector(`img[src="${imageSrc}"]`);
+    if (originalImg) {
+        originalImg.style.filter = 'blur(0px)';
+    }
+    
     // Animar ligeramente la página de fondo
     document.body.style.overflow = 'hidden';
 }
@@ -47,6 +53,15 @@ function openImageModal(imageSrc) {
 function closeImageModal() {
     const modal = document.getElementById('imageModal');
     if (modal) {
+        const modalImage = modal.querySelector('.modal-image');
+        const imageSrc = modalImage.src;
+        
+        // Volver a aplicar blur a la imagen
+        const originalImg = document.querySelector(`img[src="${imageSrc}"]`);
+        if (originalImg) {
+            originalImg.style.filter = '';
+        }
+        
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
